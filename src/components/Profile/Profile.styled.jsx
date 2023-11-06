@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const MainCard = styled.div`
   width: 350px;
-  height: 500px;
 
   margin: 100px;
 
@@ -14,13 +13,16 @@ export const MainCard = styled.div`
 `;
 
 export const Description = styled.div`
-  width: 100%;
-  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Avatar = styled.img`
   width: 150px;
   height: 150px;
+
+  border-radius: 50%;
 `;
 
 export const Username = styled.p`
@@ -44,14 +46,13 @@ export const Location = styled.p`
 `;
 
 export const Stats = styled.ul`
-  width: 100%;
-  height: 20%;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
-
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  background-color: #fff;
+  margin: 16px 0 0 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 0px;
 `;
 
 export const StatsText = styled.span`
@@ -74,5 +75,8 @@ export const StatsLi = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
