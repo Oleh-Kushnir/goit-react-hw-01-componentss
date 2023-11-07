@@ -41,3 +41,5 @@ export const Status = styled.span`
   height: 10px;
   background-color: ${p => (p.isOnline ? '#00ff00' : '#ff0000')};
 `;
+
+//final
