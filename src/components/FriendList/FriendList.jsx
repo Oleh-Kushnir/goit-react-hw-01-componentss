@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
 
-export const FriendList = ({ friends }) => {
+import {
+  FriendList,
+  FriendListItem,
+  Status,
+  Avatar,
+  Name,
+} from './FriendList.module';
+
+export const Friends = ({ friends }) => {
   return (
     <FriendList>
       {friends.map(friend => {
@@ -16,7 +24,7 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.protTypes = {
+Friends.protTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
