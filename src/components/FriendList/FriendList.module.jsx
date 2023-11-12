@@ -35,11 +35,14 @@ export const Name = styled.p`
   font-weight: 700;
 `;
 
-export const Status = styled.span`
+export const Status = styled.span.attrs(props => ({
+  style: {
+    backgroundColor: props.isonline ? '#00ff00' : '#ff0000',
+  },
+}))`
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: ${p => (p.isOnline ? '#00ff00' : '#ff0000')};
 `;
 
 //final
