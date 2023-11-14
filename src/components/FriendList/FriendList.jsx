@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FriendListItem } from '../FriendList/FriendListItem';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
 
 import { FriendList } from './FriendList.module';
 

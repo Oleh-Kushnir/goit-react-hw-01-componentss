@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 
-import { ListItem, Status, Avatar, Name } from './FriendList.module';
+import {
+  ListItem,
+  Status,
+  Avatar,
+  Name,
+} from '../FriendListItem/FriendListItem.module';
 
 export const FriendListItem = ({ avatar, name, isonline }) => {
   return (
